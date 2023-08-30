@@ -13,13 +13,8 @@ body {
 
 section {
     background: darkcyan;
-    /* border-width: 20px;
-    border-color: skyblue; */
     border-radius: 5px;
     padding-bottom: 5px;
-    /* border: 0.5px; */
-    /* border-style: outset; */
-    /* border-color:  rgba(100,146,253,.2); */
 }
 
 section h3 {
@@ -52,12 +47,19 @@ footer label, footer input {
     background: lightblue;
     border-radius: 4px;
     text-align: left;
+    box-shadow: 0px 0px 12px 12px rgba(13, 13, 13, .05);
 }
 
 .container-item span {
     display: block;
     font-size: larger;
     font-weight: 700;
+}
+
+.most-experienced {
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);;
 }
 
 /* #nice-words {
