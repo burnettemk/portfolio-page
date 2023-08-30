@@ -17,24 +17,38 @@ section {
     border-color: skyblue; */
     border-radius: 5px;
     padding-bottom: 5px;
-}
-
-.container-item {
-    color: black;
-    padding: 1.5%;
+    /* border: 0.5px; */
+    /* border-style: outset; */
+    /* border-color:  rgba(100,146,253,.2); */
 }
 
 section h3 {
     padding: 0.5em;
 }
 
+footer form {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+footer div {
+    margin: 0 24px 17px;
+}
+
+footer label, footer input {
+    display: inline-block;
+    margin-inline-start: 10px;
+}
+
 .container {
     list-style: none;
-    
+    padding-left: 0;
 }
 
 .container-item {
-    /* width: 10%; */
+    color: black;
+    padding: 1.5%;
     background: lightblue;
     border-radius: 4px;
     text-align: left;
@@ -45,6 +59,10 @@ section h3 {
     font-size: larger;
     font-weight: 700;
 }
+
+/* #nice-words {
+    display: block;
+} */
 
 @media screen and (min-width: 583px){
     .container {
