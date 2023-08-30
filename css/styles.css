@@ -1,0 +1,44 @@
+body {
+    background: #13294B;
+}
+
+h1, h2, h3 {
+    color: #ebebeb;
+}
+
+section {
+    background: navy;
+    border-radius: 5px;
+}
+
+section h3 {
+    padding: 0.5em;
+}
+
+.container {
+    list-style: none;
+}
+
+.container-item {
+    width: 10%;
+    background: lightblue;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.container-item span {
+    display: block;
+    font-size: larger;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 426px){
+    .container {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+}
