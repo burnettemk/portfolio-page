@@ -84,10 +84,20 @@ footer label, footer input {
     background: linear-gradient(#e66465, #9198e5);
 }
 
-/* #nice-words {
-    display: block;
+/* For popup display */
+/* element.style {
+    display: inline;
+    position: absolute;
+    top: 328px;
+    left: 52px;
+    z-index: 100000;
+    background: white;
+    border-radius: inherit;
+    box-shadow: inherit;
+    list-style: none;
+    width: 4em;
+    padding: 0px 67px 0px 20px;
 } */
-
 
 /* ----- Responsive Styles ---------------------------------------------------------- */
 @media screen and (min-width: 583px){

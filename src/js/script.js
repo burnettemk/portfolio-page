@@ -56,21 +56,6 @@ const programmingLangs = [
     python,
 ]
 
-// Creating a specific element for the main content adds semantic meaning 
-// const programmingExpSection = document.createElement("ul");
-// programmingExpSection.classList.add(containerClass);
-
-// This returns the function itself
-// programmingExpSection.innerHTML = programmingLangs.map((lang) => {
-//     return `
-//         <li>${lang.markup()}</li>
-//     `;
-// });
-
-// document.querySelector(".programming-exp").appendChild(programmingExpSection);
-
-// console.log(document.querySelector(containerClass));
-
 programmingLangs.forEach((lang) => {
     const card = document.createElement("li");
     card.innerHTML = lang.markup();
@@ -80,6 +65,5 @@ programmingLangs.forEach((lang) => {
     else {
         card.classList.add(itemClass, lang.comptency());
     }
-    // console.log(document.querySelector(containerClass));
     document.querySelector(".container").appendChild(card);
 });
