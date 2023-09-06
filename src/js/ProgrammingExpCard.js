@@ -1,10 +1,10 @@
 class ProgrammingExpCard {
     constructor (
         language,
-        expInYears,
+        icon,
     ) {
         this.language = language;
-        this.expInYears = expInYears;
+        this.icon = icon;
     }
     markAsMostExperienced() {
         return "most-experienced"
@@ -22,8 +22,8 @@ class ProgrammingExpCard {
     However, the main thing it needs is some more information detailing the specific 
     things I have done that indicate that I have such a certain level of experience
     */
-    comptency() {
-        switch(this.expInYears){
+    comptency(exp) {
+        switch(exp){
             case 5:
                 return "advanced";
             case 3:
@@ -33,11 +33,6 @@ class ProgrammingExpCard {
             default:
                 return "beginner";
         }
-    }
-    markup() {
-        return `
-            <span>${this.language} </span>${this.expInYears} year${this.expInYears !== 1 ? `s` : ``}
-        `;
     }
 }
 
