@@ -72,14 +72,19 @@ const addProgrammingExp = () => {
         css,
         python,
     ]
-    
+
     programmingLangs.forEach((lang) => {
         const card = document.createElement("li");
 
-        card.addEventListener("click", (event) => onClick(lang.language));
+        card.addEventListener("click", (event) => {
+            console.log(lang.language + " was clicked at x: " + event.pageX + ", y: " + event.pageY);
+            document.querySelector(".pop-up-display")
+            .setAttribute("style", "top: " + 
+            event.pageY + "px;" + "left: " + event.pageX
+             + "px;" + "width: 15%; height: 40%");
+        });
 
-        card.innerHTML = `<span>${lang.language}</span>`;
-        // card.innerHTML = `<img src=${lang.icon}></img>`
+        card.innerHTML = markup(lang);
         if (lang.language === mostExp){
             card.classList.add(itemClass, lang.markAsMostExperienced())
         }
@@ -87,31 +92,23 @@ const addProgrammingExp = () => {
             card.classList.add(itemClass, lang.comptency(3));
         }
 
-        // card.setAttribute("src", )
         document.querySelector(".container").appendChild(card);
-    });
-
-    // programmingLangs.forEach((lang) => {
-    //     const card = document.createElement("li");
-
-    //     card.innerHTML = `<img src=${csIcon}/>`;
-        
-    //     document.querySelector(".container").appendChild(card);
-    // })
+    });    
 }
 
-const onClick = (lang) => {
-    console.log(`${lang} was clicked`);
+// For displaying the language
+const markup = (lang) => {
+    return `
+    <span>${lang.language}</span>
+    <div class=" inactive ${++count}"></div>
+    `;
 }
+
+// let totalWidth = 0;
+let count = 0;
 
 addProgrammingExp();
-addSections();
 
 document.addEventListener("scroll", (event) => {
     console.log(`${window.scrollX}, ${window.scrollY}`);
 })
-
-// const newArticle = document.createElement("article");
-// newArticle.innerHTML = `<img src=${csIcon}></img>`
-
-// document.querySelector("body").appendChild(newArticle);

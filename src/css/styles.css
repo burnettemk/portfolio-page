@@ -1,3 +1,9 @@
+/* 
+data: 
+    left for c# = 55
+    left for c = 
+ */
+
 
 /* ----- Global Styles ------------------------------------------------------------ */
 html {
@@ -24,6 +30,7 @@ section {
     background: darkcyan;
     border-radius: 5px;
     padding-bottom: 5px;
+    text-align: center;
     /* margin: auto;
     width: 75%; */
 }
@@ -122,19 +129,20 @@ footer input {
 }
 
 /* For popup display */
-/* element.style {
+.pop-up-display {
     display: inline;
     position: absolute;
-    top: 328px;
-    left: 52px;
+    /* top: 290px;
+    left: 55px; */
     z-index: 100000;
     background: white;
     border-radius: inherit;
-    box-shadow: inherit;
-    list-style: none;
-    width: 4em;
-    padding: 0px 67px 0px 20px;
-} */
+    width: 40px;
+    height: 80px;
+    transition:
+        width 0.25s,
+        height 0.25s;
+}
 
 /* element.style {
     background: #911a1a;
@@ -151,6 +159,8 @@ footer input {
         display: flex;
         justify-content: space-around;
         font-size: larger;
+        width: 90%;
+        margin: 0 auto 5%;
     }
 }
 
