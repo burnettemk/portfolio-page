@@ -1,0 +1,11 @@
+learn more about css transitions
+
+redesign site layout to make it more project focused that demonstrates skills in my resume
+
+create a resume section where relevant details (marketable skills) from my resume are displayed
+
+consider adding react to this app if possible
+
+consider creating backend for this project in the future
+
+clone repo on new laptop
